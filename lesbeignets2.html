@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<html lang="fr">	
+  <head>
+  <title>Les beignets in the world </title>
+<meta charset="UTF-8"/><link type="text/css" rel="stylesheet" href="beignets2(css).css"/>
+ <script src="lesbeignets2(js).js"></script>
+
+</head>
+ <body>
+  <div class="milieu">
+  <div class="marge3"> <div class="c"><h1  class="lw1"> ♥ La meilleure recette de beignet du monde ♥ </h1></div>
+	</div>
+	
+   <br>
+ </div>
+ <br>
+ <br>
+ <div class="milieu">
+ <div class="slidecontainer", >
+ <input type="range" min="1" max="20" value="0" class="slider" id="myRange">
+  <p class="titre"><div class="c">Nombre de personnes: <span id="demo"></span></p></div>
+	</div>
+	</div>
+
+
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  recette()
+
+
+}
+</script>
+<div class="lw2"><div class="c"><div id="tableau" class="marge4"></div></div></div>
+<script>recette()</script>
+<a href="beignet1(html).html" class="c">Pour finir sa lecture sur la page principale </a>
